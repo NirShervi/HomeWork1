@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_Life_Message_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:background="#FFFFFFFF"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/main_heart_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/main_heart_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/main_heart_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/heart" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_Board"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="horizontal"
+        android:background="#FFFFFFFF"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_Rock_1x1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+            <ImageView
+                android:id="@+id/main_Rock_1x2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+            <ImageView
+                android:id="@+id/main_Rock_1x3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+
+            <ImageView
+                android:id="@+id/main_Battleship_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/battleship" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_Rock_2x1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+            <ImageView
+                android:id="@+id/main_Rock_2x2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+            <ImageView
+                android:id="@+id/main_Rock_2x3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+
+            <ImageView
+                android:id="@+id/main_Battleship_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/battleship" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_Rock_3x1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+            <ImageView
+                android:id="@+id/main_Rock_3x2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+            <ImageView
+                android:id="@+id/main_Rock_3x3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/stone" />
+
+            <ImageView
+                android:id="@+id/main_Battleship_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/battleship" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_Buttons_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:background="#FFFFFFFF"
+        tools:ignore="ExtraText">
+        <ImageButton
+           android:id="@+id/button_Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="12dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/left"
+            />
+        <ImageButton
+            android:id="@+id/button_Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="12dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/right" />
+    </LinearLayout>
+
+</LinearLayout>
